@@ -29,11 +29,6 @@ jobs:
     needs: build
     steps:
     - uses: actions/checkout@v2
- 
-    - name: Read ENV
-      uses: c-py/action-dotenv-to-setenv@v2
-      with:
-        env-file: ./.github/workflows/server_07/.env
         
     - name: SSH Deploy
       uses: appleboy/ssh-action@master
