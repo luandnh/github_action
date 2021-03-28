@@ -43,5 +43,5 @@ jobs:
           cd /home/centos/go/src/github_action/
           echo "Pull Repository"
           git pull origin dev
-          ./build/build.sh
+          ./build/deploy.sh
  
