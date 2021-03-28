@@ -40,6 +40,7 @@ jobs:
         key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
         script_stop: true
         script: |
+          cd /home/centos/go/src/github_action/
           echo "Pull Repository"
           git pull origin dev
           ./build/build.sh
